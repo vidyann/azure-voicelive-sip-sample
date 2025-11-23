@@ -1,0 +1,34 @@
+# Voice Live Configuration (Required)
+VOICE_LIVE_ENDPOINT=https://your-resource.cognitiveservices.azure.com/
+VOICE_LIVE_API_KEY=your-api-key-here
+VOICE_LIVE_MODEL=gpt-4.1
+VOICE_LIVE_VOICE=en-IN-AartiIndicNeural
+VOICE_LIVE_INSTRUCTIONS=You are a helpful AI voice assistant. Keep responses VERY brief and concise. Answer in 1-2 sentences maximum.
+VOICE_LIVE_MAX_RESPONSE_OUTPUT_TOKENS=200
+VOICE_LIVE_TRANSCRIPTION_MODEL=AZURE_SPEECH
+VOICE_LIVE_TRANSCRIPTION_LANGUAGE=en-IN
+
+# Proactive Greeting Configuration
+VOICE_LIVE_PROACTIVE_GREETING_ENABLED=true
+VOICE_LIVE_PROACTIVE_GREETING=Hello! How can I help you today?
+
+# SIP Configuration for Local Testing (default)
+SIP_LOCAL_ADDRESS=127.0.0.1
+SIP_VIA_ADDR=127.0.0.1
+MEDIA_ADDRESS=127.0.0.1
+REGISTER_WITH_SIP_SERVER=false
+
+# SIP Server Configuration (for production SIP server)
+SIP_SERVER=
+SIP_PORT=5060
+SIP_USER=
+AUTH_USER=
+AUTH_REALM=
+AUTH_PASSWORD=
+DISPLAY_NAME=Voice Live Gateway
+
+# Network Configuration (if gateway is behind NAT or on different network)
+# MEDIA_ADDRESS=your-gateway-ip
+# SIP_VIA_ADDR=your-gateway-ip
+# SIP_LOCAL_ADDRESS=0.0.0.0
+
